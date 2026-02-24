@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+body::selection{
+    background-color: rgb(217, 135, 45) !important;
+    color: white;
+}
+nav{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 300px;
+            /* background-color: rgb(217, 135, 45); */
+        }
+        .navItems{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            align-items: center;
+            gap: 60px;
+            margin-right: 20px;
+        }
+        #navLogo{
+            width: 50px;
+        }
+        #searchBtn{
+            background-color: rgb(217, 135, 45) !important;
+            color: white;
+            border: none;
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: rgb(217, 135, 45) !important;
+            padding-bottom: 4px;
+        }
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: rgb(217, 135, 45);
+            transition: 0.3s ease;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        h2{
+            color: #5c3a2e;
+            font-weight: bolder;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+        .gifHead{
+            color: #5c3a2e;
+            font-weight: bolder;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+        .cardImg{
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .card{
+            transition: transform 0.5s ease;
+        }
+        .card:hover{
+            box-shadow: 2px 2px 10px rgb(217, 135, 45);
+            transform: translateY(10px);
+        }
+        #cardBtn{
+            background-color: rgb(217, 135, 45) !important;
+            color: white;
+            border: none;
+            width: 100%;
+        }
+
+        footer{
+            color: rgb(217, 135, 45) !important;
+        }
+
+
+
+
+        
+        /* About Us */
+
+     
+
+
+        
+        .crAbout{
+            background-image: url("../images/aboutBanner.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .bannerData{
+            width: 100%;
+            max-width: 600px;
+            color: white;
+            border-radius: 20px;
+            padding: 25px;
+            float: right;
+        }
+
+
+        .bannerData h1{
+            font-size: clamp(26px, 5vw, 50px);
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+
+        .bannerData h3{
+            font-size: clamp(18px, 3vw, 26px);
+            color: white;
+        }
+
+        .bannerData p{
+            font-size: clamp(14px, 2vw, 18px);
+            border-left: 4px solid white;
+            padding-left: 20px;
+        }
+        #ourStory h1{
+            color: #5c3a2e ;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+        }
+        #ourStory h2{
+            color: rgb(217, 135, 45) ;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+        }
+        
+        #ourStory .row{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        #ourStory .col{
+            box-shadow: 2px 2px 10px rgb(217, 135, 45);
+            border-radius: 30px;
+            padding: 20px;
+            text-align: justify;
+            word-spacing: 6px;
+        }
+        #ourStory p{
+            padding: 20px;
+        }
+        
+        #choose h1{
+            color: #5c3a2e;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+        }
+        .colChoose {
+            padding: 20px;
+            text-align: justify;
+            word-spacing: 6px;
+            font-size: 18px;
+            
+        }
+        .colChoose2 {
+            padding: 20px;
+            text-align: justify;
+            font-size: 18px;
+        }
+        .chPara i{
+            margin-right: 10px;
+            color: rgb(217, 135, 45);
+        }
+        .chDiv{
+            padding: 10px;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgb(217, 135, 45);
+            margin: 15px;
+            
+        }
+        .chDiv i{
+            font-size: 22px;
+            color: rgb(217, 135, 45);
+        }
+        .chRow{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        /* contact */
+
+
+
+        .bgContact{
+            background-image: url("../images/contactBg.webp");
+            background-size: contain;
+            /* opacity: 0.3; */
+        }
+        .CbannerData{
+            height: clamp(200px, 30vh, 100px);
+            padding-top: 50px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* background-color: white; */
+        }
+        .CbannerData div{
+            font-size: clamp(26px, 5vw, 50px);
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+            color: #5c3a2e;
+            width: fit-content;
+            border-radius: 50px;
+            padding: 10px 30px;
+            margin: auto;
+            background-color: white;
+        }
+        .cBtn{
+            background-color: rgb(217, 135, 45);
+            color: white;
+        }
+        .visitIcon{
+            color: rgb(217, 135, 45);
+        }
+        .visitDiv{
+            font-size: 15px;
+        }
+        .contHeading h3{
+            color: #5c3a2e;
+            font-weight: bolder;
+            font-family: 'Playfair Display', serif;
+        }
+        .messageDiv{
+            box-shadow: 2px 2px 10px rgb(217, 135, 45);
+            border-radius: 20px;
+        }
+        .locDiv h3{
+            /* border-radius: 20px;
+            overflow: hidden; */
+            text-decoration: underline;
+            color: #5c3a2e;
+            font-weight: bolder;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* gift */
+
+
+        .giftData{
+            background-color: rgb(217, 135, 45);
+            color: white;
+            text-align: center;
+            width: clamp(95%, 100%, 100%);
+            /* margin: auto; */
+            padding: 20px;
+            height: clamp(200px, 30vh, 100px);
+        }
+        #custBtn{
+            background-color: rgb(217, 135, 45) !important;
+            color: white;
+            border: none;
+            width: clamp(200px, 30%, 100px);
+            border-radius: 30px;
+            transition: transform 0.5s ease;
+        }
+        #custBtn:hover{
+            transform: translateY(-5px);
+        }
+        .custCont{
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgb(217, 135, 45);
+        }
+        .custCont h1{
+            color: #5c3a2e;
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+        }
+        .custreview{
+            /* background-color: #5c3a2e; */
+            /* margin: 10px; */
+            display: flex;  
+            justify-content: center;
+        }
+        .custreview .col{
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgb(217, 135, 45)
+        }
+        .custreview .star{
+            color:rgb(217, 135, 45)
+        }
+        .cutRe{
+            color: #5c3a2e;
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+        }
+        .card-body .para{
+            background-color: rgb(253, 195, 134);
+            padding: 10px;
+            border-radius: 30px;
+            color: #8b6c15;
+            font-size: 20px;
+            font-weight: bolder ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card-body .gram{
+            padding: 5px 20px;
+            background-color: white;
+            border: 2px solid rgb(217, 135, 45);
+            border-radius: 20px;
+            color: black;
+            font-size: 15px;
+            font-weight: normal ;
+        }
+        .paraMain .ingName{
+            color:rgb(217, 135, 45);
+            font-weight: bolder;
+        }
