@@ -347,3 +347,24 @@ nav{
         .navbar-collapse{
             display: none;
         }
+        .pEv{
+            border: 2px solid rgb(217, 135, 45);
+            padding: 20px;
+            border-radius: 40px;
+            color: #5c3a2e;
+            font-size: 20px;
+            font-weight: bolder ;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .dateEvent{
+            padding: 5px 20px;
+            background-color: rgb(217, 135, 45);
+            border-radius: 20px;
+            color: white;
+            font-size: 15px;
+            font-weight: normal ;
+            justify-self: self-end;
+        }
