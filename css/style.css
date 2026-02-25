@@ -267,10 +267,10 @@ nav{
             background-color: rgb(217, 135, 45);
             color: white;
             text-align: center;
-            width: clamp(95%, 100%, 100%);
+            width: clamp(100%, 100%, 100%);
             /* margin: auto; */
             padding: 20px;
-            height: clamp(200px, 30vh, 100px);
+            min-height: clamp(200px, 30vh, 500px);
         }
         #custBtn{
             background-color: rgb(217, 135, 45) !important;
@@ -335,4 +335,15 @@ nav{
         .paraMain .ingName{
             color:rgb(217, 135, 45);
             font-weight: bolder;
+        }
+        .bi-list{
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+        .bi-list{
+            display: block;
+        }
+        }
+        .navbar-collapse{
+            display: none;
         }

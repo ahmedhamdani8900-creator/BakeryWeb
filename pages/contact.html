@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function(){
+  $("#showing").click(function(){
+    $("#navbarSupportedContent").fadeToggle();
+  });
+});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,13 +30,16 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="d-flex">
+        <i class="bi bi-list" id="showing" style="font-size: 20px;"></i>
+      </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="../index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,7 +80,7 @@
         <h3>Visit or Call</h3>
         <p><i class="visitIcon bi bi-geo-alt-fill"></i> &nbsp;&nbsp; Address <span> 221B Baker Street, London, UK</span></p>
         <p><i class="visitIcon bi bi-telephone-fill"></i> &nbsp;&nbsp; Phone <span> +92 335 2541802</span></p>
-        <p><i class="visitIcon bi bi-envelope-at-fill"></i> &nbsp;&nbsp; Email <span> ahmedhamdani8900@gmail.com</span></p>
+        <p><i class="visitIcon bi bi-envelope-at-fill"></i> &nbsp;&nbsp; Email <span> <a href="mailto:ahmedhamdani8900@gmail.com">ahmedhamdani8900@gmail.com</a></span></p>
         <p><i class="visitIcon bi bi-door-open-fill"></i> &nbsp;&nbsp; Opening Hours <span> Mon-Sat: 8am–7pm, Sun: 9am–3pm</span></p>
     </div>
     <div class="col-lg-8 col-sm-12 messageDiv p-4">
