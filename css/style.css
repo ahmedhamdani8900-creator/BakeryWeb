@@ -30,7 +30,7 @@ nav{
             color: white;
             border: none;
         }
-        a{
+        .nav-item a{
             position: relative;
             text-decoration: none;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -38,7 +38,7 @@ nav{
             color: rgb(217, 135, 45) !important;
             padding-bottom: 4px;
         }
-        a::after {
+        .nav-item a::after {
             content: "";
             position: absolute;
             left: 0;
@@ -48,7 +48,7 @@ nav{
             background-color: rgb(217, 135, 45);
             transition: 0.3s ease;
         }
-        a:hover::after {
+        .nav-item a:hover::after {
             width: 100%;
         }
         h2{
@@ -242,6 +242,27 @@ nav{
         .visitDiv{
             font-size: 15px;
         }
+        .visitDivD{
+            background-image: url("../images/Black Forest Cake.jpg");
+            background-size: cover;
+            border-radius: 20px;
+            min-height: 300px;
+            box-shadow: 0px 0px 10px rgb(217, 135, 45);
+        }
+        .sweetImage{
+            background-image: url("../images/Gulab\ Jamun.jpg");
+            background-size: cover;
+            border-radius: 20px;
+            min-height: 300px;
+            box-shadow: 0px 0px 10px rgb(217, 135, 45);
+        }
+        .bakeryImage{
+            background-image: url("../images/Sourdough\ loaf.webp");
+            background-size: cover;
+            border-radius: 20px;
+            min-height: 300px;
+            box-shadow: 0px 0px 10px rgb(217, 135, 45);
+        }
         .contHeading h3{
             color: #5c3a2e;
             font-weight: bolder;
@@ -258,6 +279,53 @@ nav{
             color: #5c3a2e;
             font-weight: bolder;
             font-family: 'Playfair Display', serif;
+        }
+
+        .rating i{
+            color: rgb(217, 135, 45);
+        }
+        .dPrice p{
+            padding: 5px 40px;
+            border: 2px solid rgb(217, 135, 45);
+            width: fit-content;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .ing{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 30px;
+        }
+        .ing span{
+            background-color: rgb(243, 181, 115);
+            padding: 10px 20px;
+            border-radius: 30px;
+            /* margin-left: 20px; */
+        }
+        .QtyandGram{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+        }
+        .QtyandGram input{
+            border: 2px solid rgb(217, 135, 45);
+            border-radius: 20px;
+            padding: 5px 20px;
+            outline: none;
+            /* width: 45%; */
+        }
+        .dBtn .btn{
+            border: 2px solid rgb(217, 135, 45);
+            color: rgb(217, 135, 45)    ;
+            font-weight: bolder;
+
+        }
+        .dBtn .btn:hover{
+            color: white;
+            background-color: rgb(217, 135, 45)    ;
+
         }
 
         /* gift */
